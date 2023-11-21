@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>men-monday</title>
+
+  <style>
+
+body {
+  background-image: url('https://i.pinimg.com/564x/42/98/0a/42980a7c86c995c55a912caca4120dd3.jpg');
+  background-size: 75%;
+}
+  #info1 {
+   background-color: white;
+   display: none;
+   position: absolute;
+   width:250px;
+   height:375px;
+   left:15%;
+   bottom:40%;
+   opacity:60%;
+   font-size:20px;
+   border-radius: 15%;
+}
+.img1{
+  border-radius: 15%;
+  width: 250px;
+  high: 400px;
+  position: absolute;
+  bottom: 40%;
+  left:15%;
+  transition: 1s;
+}
+
+
+.img1:hover {
+ transform:scale(1.2);
+ }
+
+ #info2 {
+  background-color: white;
+  display: none;
+  position: absolute;
+  width:250px;
+  height:375px;
+  left:40%;
+  bottom:40%;
+  opacity:60%;
+  font-size:20px;
+  border-radius: 15%;
+ }
+
+.img2{
+  border-radius: 15%;
+  width: 250px;
+  height: 375px;
+  position: absolute;
+  bottom: 40%;
+  left:40%;
+  transition: 1s;
+}
+
+.img2:hover {
+ transform:scale(1.2);
+ }
+
+ #info3 {
+  background-color: white;
+  display: none;
+  position: absolute;
+  width:250px;
+  height:375px;
+  left:65%;
+  bottom:40%;
+  opacity:60%;
+  font-size:20px;
+  border-radius: 15%;
+}
+
+.img3{
+  width: 250px;
+  height:375px;
+  position: absolute;
+  bottom: 40%;
+  left:65%;
+  transition: 1s;
+  border-radius: 15%;
+}
+
+
+.img3:hover {
+ transform:scale(1.2);
+ }
+
+
+  #info4 {
+   background-color: white;
+   display: none;
+   position: absolute;
+   width:220px;
+   height:200px;
+   left:28%;
+   bottom:6%;
+   opacity:70%;
+   font-size:14px;
+   border-radius: 15%;
+ }
+.img4{
+  width: 220px;
+  height: 200px;
+  position: absolute;
+  left:28%;
+  bottom: 6%;
+  transition: 1s;
+  border-radius: 15%;
+}
+.img4:hover{
+  transform: scale(1.2);
+}
+
+#info5 {
+  background-color: white;
+  display: none;
+  position: absolute;
+  width:220px;
+  height:200px;
+  left:53%;
+  bottom:6%;
+  opacity:70%;
+  font-size:14px;
+  border-radius: 15%;
+}
+.img5{
+  width: 220px;
+  height: 200px;
+  position: absolute;
+  left:53%;
+  bottom: 6%;
+  transition: 1s;
+  border-radius: 15%;
+}
+.img5:hover{
+  transform: scale(1.2);
+}
+</style>
+</head>
+<body>
+
+<img class="img1" id="img1" src="https://i.pinimg.com/564x/c3/91/58/c39158ab9cc92128c715e9d49e040ea2.jpg" alt="">
+<img class="img2" id="img2" src="https://i.pinimg.com/564x/31/f8/59/31f859b588114ed187ced806b2f33ae7.jpg" alt="">
+<img class="img3" id="img3" src="https://i.pinimg.com/564x/c5/a8/a6/c5a8a685ebc2f047ad12697caa334b83.jpg" alt="">
+<img class="img4" id="img4" src="https://i.pinimg.com/564x/15/9f/58/159f5873f3ef6307585ab21674ea2875.jpg" alt="">
+<img class="img5" id="img5" src="https://i.pinimg.com/564x/b9/17/3b/b9173bd661ada597313b444772b2b171.jpg" alt="">
+<div id="info1">
+  <h3 align = "center">SHIRT</h3>
+  <p>Colors: blue, black, grey<br>
+    <br>
+    Composition: 95% cotton, 5% polyester<br>
+    <br>
+    Available: Zara, Massimo Dutti<br>
+    <br>
+    Approximate price: 11.000-23.990₸</p>
+  </div>
+
+
+  <div id="info2">
+    <h3 align = "center">TROUSERS</h3>
+    <p>Colors: blue, grey <br>
+      <br>
+      Composition:  45% cotton, 55% viscose<br>
+      <br>
+      Available: Kanzler, Mossimo Dutti <br>
+      <br>
+      Approximate price: 16.000-25.000₸</p>
+    </div>
+
+
+<div id="info3">
+      <h3 align = "center">SHOES</h3>
+      <p>Colors: black, brown<br>
+        <br>
+        Composition: 100% leather<br>
+        <br>
+        Available: Intertop, Marc O'Polo<br>
+        <br>
+        Approximate price: 25.000-55.990₸</p>
+</div>
+
+
+<div id="info4">
+      <h3 align = "center">WATCH</h3>
+      <p>Colors: Any<br>
+        <br>
+        Composition: stainless steel, metal<br>
+        <br>
+        Available: Empire, Diesel, Armani <br>
+        <br>
+        Approximate price: 70.000 - 150.000₸</p>
+</div>
+
+
+
+<div id="info5">
+      <h3 align = "center">BELT</h3>
+      <p>Colors: black<br>
+        <br>
+        Composition: leather<br>
+        <br>
+        Available: Basconi, Guess, <br>
+        <br>
+        Approximate price: 15.000-24.000₸</p>
+</div>
+
+
+<script>
+var image1 = document.getElementById('img1');
+var infoContainer1 = document.getElementById('info1');
+
+infoContainer1.addEventListener('click', function() {
+  infoContainer1.style.display = 'none';
+});
+
+image1.addEventListener('click', function() {
+  var isInfoVisible1 = window.getComputedStyle(infoContainer1).display !== 'none';
+
+  infoContainer1.style.display = isInfoVisible1 ? 'none' : 'block';
+
+});
+
+
+var image2 = document.getElementById('img2');
+var infoContainer2 = document.getElementById('info2');
+
+infoContainer2.addEventListener('click', function() {
+  infoContainer2.style.display = 'none';
+});
+
+image2.addEventListener('click', function() {
+  var isInfoVisible2 = window.getComputedStyle(infoContainer2).display !== 'none';
+
+  infoContainer2.style.display = isInfoVisible2 ? 'none' : 'block';
+
+});
+
+
+var image3 = document.getElementById('img3');
+var infoContainer3 = document.getElementById('info3');
+
+infoContainer3.addEventListener('click', function() {
+  infoContainer3.style.display = 'none';
+});
+
+image3.addEventListener('click', function() {
+  var isInfoVisible3 = window.getComputedStyle(infoContainer3).display !== 'none';
+
+  infoContainer3.style.display = isInfoVisible3 ? 'none' : 'block';
+
+});
+
+
+var image4 = document.getElementById('img4');
+var infoContainer4 = document.getElementById('info4');
+
+infoContainer4.addEventListener('click', function() {
+  infoContainer4.style.display = 'none';
+});
+
+image4.addEventListener('click', function() {
+  var isInfoVisible4 = window.getComputedStyle(infoContainer4).display !== 'none';
+
+  infoContainer4.style.display = isInfoVisible4 ? 'none' : 'block';
+
+});
+
+
+var image5 = document.getElementById('img5');
+var infoContainer5 = document.getElementById('info5');
+
+infoContainer5.addEventListener('click', function() {
+  infoContainer5.style.display = 'none';
+});
+
+image5.addEventListener('click', function() {
+  var isInfoVisible5 = window.getComputedStyle(infoContainer5).display !== 'none';
+
+  infoContainer5.style.display = isInfoVisible5 ? 'none' : 'block';
+
+});
+
+</script>
+
+  </body>
+</html>

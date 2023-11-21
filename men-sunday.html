@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>men-sunday</title>
+
+  <style>
+
+body {
+  background-image: url('https://i.pinimg.com/564x/42/98/0a/42980a7c86c995c55a912caca4120dd3.jpg');
+  background-size: 75%;
+}
+  #info1 {
+   background-color: white;
+   display: none;
+   position: absolute;
+   width:250px;
+   height:335px;
+   left:15%;
+   bottom:40%;
+   opacity:60%;
+   font-size:20px;
+   border-radius: 15%;
+}
+.img1{
+  border-radius: 15%;
+  width: 250px;
+  high: 400px;
+  position: absolute;
+  bottom: 40%;
+  left:15%;
+  transition: 1s;
+}
+
+
+.img1:hover {
+ transform:scale(1.2);
+ }
+
+ #info2 {
+  background-color: white;
+  display: none;
+  position: absolute;
+  width:250px;
+  height:335px;
+  left:40%;
+  bottom:40%;
+  opacity:60%;
+  font-size:20px;
+  border-radius: 15%;
+ }
+
+.img2{
+  border-radius: 15%;
+  width: 250px;
+  height: 335px;
+  position: absolute;
+  bottom: 40%;
+  left:40%;
+  transition: 1s;
+}
+
+.img2:hover {
+ transform:scale(1.2);
+ }
+
+ #info3 {
+  background-color: white;
+  display: none;
+  position: absolute;
+  width:250px;
+  height:335px;
+  left:65%;
+  bottom:40%;
+  opacity:60%;
+  font-size:20px;
+  border-radius: 15%;
+}
+
+.img3{
+  width: 250px;
+  height:335px;
+  position: absolute;
+  bottom: 40%;
+  left:65%;
+  transition: 1s;
+  border-radius: 15%;
+}
+
+
+.img3:hover {
+ transform:scale(1.2);
+ }
+
+
+  #info4 {
+   background-color: white;
+   display: none;
+   position: absolute;
+   width:220px;
+   height:200px;
+   left:28%;
+   bottom:6%;
+   opacity:70%;
+   font-size:14px;
+   border-radius: 15%;
+ }
+.img4{
+  width: 220px;
+  height: 200px;
+  position: absolute;
+  left:28%;
+  bottom: 6%;
+  transition: 1s;
+  border-radius: 15%;
+}
+.img4:hover{
+  transform: scale(1.2);
+}
+
+#info5 {
+  background-color: white;
+  display: none;
+  position: absolute;
+  width:220px;
+  height:200px;
+  left:53%;
+  bottom:6%;
+  opacity:70%;
+  font-size:14px;
+  border-radius: 15%;
+}
+.img5{
+  width: 220px;
+  height: 200px;
+  position: absolute;
+  left:53%;
+  bottom: 6%;
+  transition: 1s;
+  border-radius: 15%;
+}
+.img5:hover{
+  transform: scale(1.2);
+}
+</style>
+</head><body>
+
+<img class="img1" id="img1" src="https://i.pinimg.com/564x/07/3b/7f/073b7f1ce35b2ec9724d8daccc79d5c9.jpg" alt="">
+<img class="img2" id="img2" src="https://i.pinimg.com/564x/fc/7b/dd/fc7bdde562015431f05f7ef306a997eb.jpg" alt="">
+<img class="img3" id="img3" src="https://i.pinimg.com/564x/33/68/02/3368023979050e7711d4d2bde06dd45f.jpg" alt="">
+<img class="img4" id="img4" src="https://i.pinimg.com/564x/df/b3/ba/dfb3bac9e73eadd0dcd861c29e5cf9a5.jpg" alt="">
+<img class="img5" id="img5" src="https://i.pinimg.com/564x/a4/c1/d3/a4c1d3213a2873d073262ece5596717b.jpg" alt="">
+<div id="info1">
+  <h3 align = "center">HOODIE</h3>
+  <p>Colors: Any <br>
+    <br>
+    Composition: 85% cotton, 15% polyester<br>
+    <br>
+    Available: Qazaq Republic, Pull&Bear<br>
+    <br>
+    Approximate price: 20.000-35.000₸</p>
+  </div>
+
+
+  <div id="info2">
+    <h3 align = "center">SWEATPANTS</h3>
+    <p>Colors: Any <br>
+      <br>
+      Composition:  75% cotton, 35% viscose<br>
+      <br>
+      Available: Sport Master, Skechers <br>
+      <br>
+      Approximate price: 21.000-55.000₸</p>
+    </div>
+
+
+<div id="info3">
+      <h3 align = "center">YEEZY700</h3>
+      <p>Colors: Any  <br>
+        <br>
+        Composition: 100% leather <br>
+        <br>
+        Available: Sport Master, Nike<br>
+        <br>
+        Approximate price: 55.000-85.000₸</p>
+</div>
+
+
+<div id="info4">
+      <h3 align = "center">BRACELET</h3>
+      <p>Colors: Any <br>
+        <br>
+        Composition: beads <br>
+        <br>
+        Available: New Yorker <br>
+        <br>
+        Approximate price: 5.000 - 10.000₸</p>
+</div>
+
+
+
+<div id="info5">
+      <h3 align = "center">HEADBAND</h3>
+      <p>Colors: Any  <br>
+        <br>
+        Composition: 51% cotton, 49% polyamide<br>
+        <br>
+        Available: Sport Master, Nike, Skechers <br>
+        <br>
+        Approximate price: 2.000-5.000₸</p>
+</div>
+
+
+<script>
+var image1 = document.getElementById('img1');
+var infoContainer1 = document.getElementById('info1');
+
+infoContainer1.addEventListener('click', function() {
+  infoContainer1.style.display = 'none';
+});
+
+image1.addEventListener('click', function() {
+  var isInfoVisible1 = window.getComputedStyle(infoContainer1).display !== 'none';
+
+  infoContainer1.style.display = isInfoVisible1 ? 'none' : 'block';
+
+});
+
+
+var image2 = document.getElementById('img2');
+var infoContainer2 = document.getElementById('info2');
+
+infoContainer2.addEventListener('click', function() {
+  infoContainer2.style.display = 'none';
+});
+
+image2.addEventListener('click', function() {
+  var isInfoVisible2 = window.getComputedStyle(infoContainer2).display !== 'none';
+
+  infoContainer2.style.display = isInfoVisible2 ? 'none' : 'block';
+
+});
+
+
+var image3 = document.getElementById('img3');
+var infoContainer3 = document.getElementById('info3');
+
+infoContainer3.addEventListener('click', function() {
+  infoContainer3.style.display = 'none';
+});
+
+image3.addEventListener('click', function() {
+  var isInfoVisible3 = window.getComputedStyle(infoContainer3).display !== 'none';
+
+  infoContainer3.style.display = isInfoVisible3 ? 'none' : 'block';
+
+});
+
+
+var image4 = document.getElementById('img4');
+var infoContainer4 = document.getElementById('info4');
+
+infoContainer4.addEventListener('click', function() {
+  infoContainer4.style.display = 'none';
+});
+
+image4.addEventListener('click', function() {
+  var isInfoVisible4 = window.getComputedStyle(infoContainer4).display !== 'none';
+
+  infoContainer4.style.display = isInfoVisible4 ? 'none' : 'block';
+
+});
+
+
+var image5 = document.getElementById('img5');
+var infoContainer5 = document.getElementById('info5');
+
+infoContainer5.addEventListener('click', function() {
+  infoContainer5.style.display = 'none';
+});
+
+image5.addEventListener('click', function() {
+  var isInfoVisible5 = window.getComputedStyle(infoContainer5).display !== 'none';
+
+  infoContainer5.style.display = isInfoVisible5 ? 'none' : 'block';
+
+});
+
+</script>
+
+  </body>
+</html>

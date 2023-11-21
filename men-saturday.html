@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>men-saturday</title>
+
+  <style>
+
+body {
+  background-image: url('https://i.pinimg.com/564x/42/98/0a/42980a7c86c995c55a912caca4120dd3.jpg');
+  background-size: 75%;
+}
+  #info1 {
+   background-color: white;
+   display: none;
+   position: absolute;
+   width:250px;
+   height:335px;
+   left:15%;
+   bottom:40%;
+   opacity:60%;
+   font-size:20px;
+   border-radius: 15%;
+}
+.img1{
+  border-radius: 15%;
+  width: 220px;
+  high: 300px;
+  position: absolute;
+  bottom: 40%;
+  left:15%;
+  transition: 1s;
+}
+
+
+.img1:hover {
+ transform:scale(1.2);
+ }
+
+ #info2 {
+  background-color: white;
+  display: none;
+  position: absolute;
+  width:250px;
+  height:335px;
+  left:40%;
+  bottom:40%;
+  opacity:60%;
+  font-size:20px;
+  border-radius: 15%;
+ }
+
+.img2{
+  border-radius: 15%;
+  width: 250px;
+  height: 335px;
+  position: absolute;
+  bottom: 40%;
+  left:40%;
+  transition: 1s;
+}
+
+.img2:hover {
+ transform:scale(1.2);
+ }
+
+ #info3 {
+  background-color: white;
+  display: none;
+  position: absolute;
+  width:250px;
+  height:335px;
+  left:65%;
+  bottom:40%;
+  opacity:60%;
+  font-size:20px;
+  border-radius: 15%;
+}
+
+.img3{
+  width: 250px;
+  height:335px;
+  position: absolute;
+  bottom: 40%;
+  left:65%;
+  transition: 1s;
+  border-radius: 15%;
+}
+
+
+.img3:hover {
+ transform:scale(1.2);
+ }
+
+
+  #info4 {
+   background-color: white;
+   display: none;
+   position: absolute;
+   width:220px;
+   height:200px;
+   left:28%;
+   bottom:6%;
+   opacity:70%;
+   font-size:14px;
+   border-radius: 15%;
+ }
+.img4{
+  width: 220px;
+  height: 200px;
+  position: absolute;
+  left:28%;
+  bottom: 6%;
+  transition: 1s;
+  border-radius: 15%;
+}
+.img4:hover{
+  transform: scale(1.2);
+}
+
+#info5 {
+  background-color: white;
+  display: none;
+  position: absolute;
+  width:220px;
+  height:200px;
+  left:53%;
+  bottom:6%;
+  opacity:70%;
+  font-size:14px;
+  border-radius: 15%;
+}
+.img5{
+  width: 220px;
+  height: 200px;
+  position: absolute;
+  left:53%;
+  bottom: 6%;
+  transition: 1s;
+  border-radius: 15%;
+}
+.img5:hover{
+  transform: scale(1.2);
+}
+</style>
+</head>
+<body>
+
+<img class="img1" id="img1" src="https://i.pinimg.com/564x/88/c4/72/88c472ff6b04e9adb8f2abcdbb74eb44.jpg" alt="">
+<img class="img2" id="img2" src="https://i.pinimg.com/564x/d1/a5/05/d1a505ba43ed21e2de152c3ebf16f3a0.jpg" alt="">
+<img class="img3" id="img3" src="https://i.pinimg.com/564x/15/ce/89/15ce89cc5e7066640787eb4e90e561c1.jpg" alt="">
+<img class="img4" id="img4" src="https://i.pinimg.com/564x/ae/e9/d8/aee9d8f944cdda64620a4c82d520468e.jpg" alt="">
+<img class="img5" id="img5" src="https://i.pinimg.com/564x/b7/b1/e4/b7b1e447eea1d2748aebce16eebaac36.jpg" alt="">
+<div id="info1">
+  <h3 align = "center">CARDIGAN</h3>
+  <p>Colors: black, grey<br>
+    <br>
+    Composition: 100% cotton<br>
+    <br>
+    Available: Zara, Massimo Dutti<br>
+    <br>
+    Approximate price: 27.000-49.000₸</p>
+  </div>
+
+
+  <div id="info2">
+    <h3 align = "center">JEANS</h3>
+    <p>Colors: brown <br>
+      <br>
+      Composition: 60% cotton, 40% polyester<br>
+      <br>
+      Available: Timberland, Tommy Hilfiger <br>
+      <br>
+      Approximate price: 26.000-59.000₸</p>
+    </div>
+
+
+<div id="info3">
+      <h3 align = "center">SHOES</h3>
+      <p>Colors: Any  <br>
+        <br>
+        Composition: 100% leather <br>
+        <br>
+        Available: Lacoste, Timberland<br>
+        <br>
+        Approximate price: 55.000-99.000₸</p>
+</div>
+
+
+<div id="info4">
+      <h3 align = "center">WALLET</h3>
+      <p>Colors: black<br>
+        <br>
+        Composition: 100% eco leather <br>
+        <br>
+        Available: Geox, Guess <br>
+        <br>
+        Approximate price: 25.000 - 69.000₸</p>
+</div>
+
+
+
+<div id="info5">
+      <h3 align = "center">WATCH</h3>
+      <p>Colors: Any  <br>
+        <br>
+        Composition: stainlees steel, metal<br>
+        <br>
+        Available: Armani, Tissot, Omega <br>
+        <br>
+        Approximate price: 30.000-95.000₸</p>
+</div>
+
+
+<script>
+var image1 = document.getElementById('img1');
+var infoContainer1 = document.getElementById('info1');
+
+infoContainer1.addEventListener('click', function() {
+  infoContainer1.style.display = 'none';
+});
+
+image1.addEventListener('click', function() {
+  var isInfoVisible1 = window.getComputedStyle(infoContainer1).display !== 'none';
+
+  infoContainer1.style.display = isInfoVisible1 ? 'none' : 'block';
+
+});
+
+
+var image2 = document.getElementById('img2');
+var infoContainer2 = document.getElementById('info2');
+
+infoContainer2.addEventListener('click', function() {
+  infoContainer2.style.display = 'none';
+});
+
+image2.addEventListener('click', function() {
+  var isInfoVisible2 = window.getComputedStyle(infoContainer2).display !== 'none';
+
+  infoContainer2.style.display = isInfoVisible2 ? 'none' : 'block';
+
+});
+
+
+var image3 = document.getElementById('img3');
+var infoContainer3 = document.getElementById('info3');
+
+infoContainer3.addEventListener('click', function() {
+  infoContainer3.style.display = 'none';
+});
+
+image3.addEventListener('click', function() {
+  var isInfoVisible3 = window.getComputedStyle(infoContainer3).display !== 'none';
+
+  infoContainer3.style.display = isInfoVisible3 ? 'none' : 'block';
+
+});
+
+
+var image4 = document.getElementById('img4');
+var infoContainer4 = document.getElementById('info4');
+
+infoContainer4.addEventListener('click', function() {
+  infoContainer4.style.display = 'none';
+});
+
+image4.addEventListener('click', function() {
+  var isInfoVisible4 = window.getComputedStyle(infoContainer4).display !== 'none';
+
+  infoContainer4.style.display = isInfoVisible4 ? 'none' : 'block';
+
+});
+
+
+var image5 = document.getElementById('img5');
+var infoContainer5 = document.getElementById('info5');
+
+infoContainer5.addEventListener('click', function() {
+  infoContainer5.style.display = 'none';
+});
+
+image5.addEventListener('click', function() {
+  var isInfoVisible5 = window.getComputedStyle(infoContainer5).display !== 'none';
+
+  infoContainer5.style.display = isInfoVisible5 ? 'none' : 'block';
+
+});
+
+</script>
+
+  </body>
+</html>

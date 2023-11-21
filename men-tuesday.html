@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>men-tuesday</title>
+
+  <style>
+
+body {
+  background-image: url('https://i.pinimg.com/564x/42/98/0a/42980a7c86c995c55a912caca4120dd3.jpg');
+  background-size: 75%;
+}
+  #info1 {
+   background-color: white;
+   display: none;
+   position: absolute;
+   width:250px;
+   height:375px;
+   left:15%;
+   bottom:40%;
+   opacity:60%;
+   font-size:20px;
+   border-radius: 15%;
+}
+.img1{
+  border-radius: 15%;
+  width: 250px;
+  high: 400px;
+  position: absolute;
+  bottom: 40%;
+  left:15%;
+  transition: 1s;
+}
+
+
+.img1:hover {
+ transform:scale(1.2);
+ }
+
+ #info2 {
+  background-color: white;
+  display: none;
+  position: absolute;
+  width:250px;
+  height:375px;
+  left:40%;
+  bottom:40%;
+  opacity:60%;
+  font-size:20px;
+  border-radius: 15%;
+ }
+
+.img2{
+  border-radius: 15%;
+  width: 250px;
+  height: 375px;
+  position: absolute;
+  bottom: 40%;
+  left:40%;
+  transition: 1s;
+}
+
+.img2:hover {
+ transform:scale(1.2);
+ }
+
+ #info3 {
+  background-color: white;
+  display: none;
+  position: absolute;
+  width:250px;
+  height:375px;
+  left:65%;
+  bottom:40%;
+  opacity:60%;
+  font-size:20px;
+  border-radius: 15%;
+}
+
+.img3{
+  width: 250px;
+  height:375px;
+  position: absolute;
+  bottom: 40%;
+  left:65%;
+  transition: 1s;
+  border-radius: 15%;
+}
+
+
+.img3:hover {
+ transform:scale(1.2);
+ }
+
+
+  #info4 {
+   background-color: white;
+   display: none;
+   position: absolute;
+   width:220px;
+   height:200px;
+   left:28%;
+   bottom:6%;
+   opacity:70%;
+   font-size:14px;
+   border-radius: 15%;
+ }
+.img4{
+  width: 220px;
+  height: 200px;
+  position: absolute;
+  left:28%;
+  bottom: 6%;
+  transition: 1s;
+  border-radius: 15%;
+}
+.img4:hover{
+  transform: scale(1.2);
+}
+
+#info5 {
+  background-color: white;
+  display: none;
+  position: absolute;
+  width:220px;
+  height:200px;
+  left:53%;
+  bottom:6%;
+  opacity:70%;
+  font-size:14px;
+  border-radius: 15%;
+}
+.img5{
+  width: 220px;
+  height: 200px;
+  position: absolute;
+  left:53%;
+  bottom: 6%;
+  transition: 1s;
+  border-radius: 15%;
+}
+.img5:hover{
+  transform: scale(1.2);
+}
+</style>
+</head>
+<body>
+
+<img class="img1" id="img1" src="https://i.pinimg.com/564x/3d/c0/a4/3dc0a4880b43bbdf73f89e6740e069fa.jpg" alt="">
+<img class="img2" id="img2" src="https://i.pinimg.com/564x/89/60/2c/89602ce413823518fc1de6c700446fca.jpg" alt="">
+<img class="img3" id="img3" src="https://i.pinimg.com/564x/9f/ad/59/9fad597e16973c7027c6bae9996d0726.jpg" alt="">
+<img class="img4" id="img4" src="https://i.pinimg.com/564x/80/7d/01/807d0139e2ba7e072bf05b661f4fd947.jpg" alt="">
+<img class="img5" id="img5" src="https://i.pinimg.com/564x/60/34/b1/6034b1c848926d5b5dc4a97ca4923bb2.jpg" alt="">
+<div id="info1">
+  <h3 align = "center">T-SHIRT</h3>
+  <p>Colors: black, white, beige<br>
+    <br>
+    Composition: 85% cotton, 15% wool<br>
+    <br>
+    Available: Bershka, Pull&Bear<br>
+    <br>
+    Approximate price: 10.000-20.000₸</p>
+  </div>
+
+
+  <div id="info2">
+    <h3 align = "center">Jeans</h3>
+    <p>Colors: Black, grey<br>
+      <br>
+      Composition: 100% woven cotton<br>
+      <br>
+      Available: Bershka,New Yorker<br>
+      <br>
+      Approximate price: 19.000-30.000₸</p>
+    </div>
+
+
+<div id="info3">
+      <h3 align = "center">SNEAKERS</h3>
+      <p>Colors: black, brown<br>
+        <br>
+        Composition: 100% leather<br>
+        <br>
+        Available: Jack&Jones, Nike<br>
+        <br>
+        Approximate price: 35.000-65.000₸</p>
+</div>
+
+
+<div id="info4">
+      <h3 align = "center">CAP</h3>
+      <p>Colors: Any basic <br>
+        <br>
+        Composition: 90% cotton, 10% nylon<br>
+        <br>
+        Available: Pull&Bear, Levi's <br>
+        <br>
+        Approximate price: 10.000 - 20.000₸</p>
+</div>
+
+
+
+<div id="info5">
+      <h3 align = "center">SAC BANANE</h3>
+      <p>Colors: black<br>
+        <br>
+        Composition: 80% cotton, 20% polyester<br>
+        <br>
+        Available:Lacoste, New Yorker <br>
+        <br>
+        Approximate price: 13.000-25.000₸</p>
+</div>
+
+
+<script>
+var image1 = document.getElementById('img1');
+var infoContainer1 = document.getElementById('info1');
+
+infoContainer1.addEventListener('click', function() {
+  infoContainer1.style.display = 'none';
+});
+
+image1.addEventListener('click', function() {
+  var isInfoVisible1 = window.getComputedStyle(infoContainer1).display !== 'none';
+
+  infoContainer1.style.display = isInfoVisible1 ? 'none' : 'block';
+
+});
+
+
+var image2 = document.getElementById('img2');
+var infoContainer2 = document.getElementById('info2');
+
+infoContainer2.addEventListener('click', function() {
+  infoContainer2.style.display = 'none';
+});
+
+image2.addEventListener('click', function() {
+  var isInfoVisible2 = window.getComputedStyle(infoContainer2).display !== 'none';
+
+  infoContainer2.style.display = isInfoVisible2 ? 'none' : 'block';
+
+});
+
+
+var image3 = document.getElementById('img3');
+var infoContainer3 = document.getElementById('info3');
+
+infoContainer3.addEventListener('click', function() {
+  infoContainer3.style.display = 'none';
+});
+
+image3.addEventListener('click', function() {
+  var isInfoVisible3 = window.getComputedStyle(infoContainer3).display !== 'none';
+
+  infoContainer3.style.display = isInfoVisible3 ? 'none' : 'block';
+
+});
+
+
+var image4 = document.getElementById('img4');
+var infoContainer4 = document.getElementById('info4');
+
+infoContainer4.addEventListener('click', function() {
+  infoContainer4.style.display = 'none';
+});
+
+image4.addEventListener('click', function() {
+  var isInfoVisible4 = window.getComputedStyle(infoContainer4).display !== 'none';
+
+  infoContainer4.style.display = isInfoVisible4 ? 'none' : 'block';
+
+});
+
+
+var image5 = document.getElementById('img5');
+var infoContainer5 = document.getElementById('info5');
+
+infoContainer5.addEventListener('click', function() {
+  infoContainer5.style.display = 'none';
+});
+
+image5.addEventListener('click', function() {
+  var isInfoVisible5 = window.getComputedStyle(infoContainer5).display !== 'none';
+
+  infoContainer5.style.display = isInfoVisible5 ? 'none' : 'block';
+
+});
+
+</script>
+
+  </body>
+</html>

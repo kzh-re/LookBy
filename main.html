@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+{% block content %}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .block {
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img1 { background-image: url("https://i.pinimg.com/564x/f8/5a/23/f85a23014ae0e5a9f23be49ac3750eeb.jpg"); }
+        .img2 { background-image: url("https://i.pinimg.com/564x/76/ef/00/76ef001d7522732cd6bc036c5add250c.jpg"); }
+        .img3 { background-image: url("https://i.pinimg.com/564x/2c/a1/8d/2ca18d0c79c958d56f9e0b9e50bafc0d.jpg"); }
+        .img4 { background-image: url("https://i.pinimg.com/564x/73/d0/82/73d08254c50a43a461fc03187163d3cc.jpg"); }
+        .img5 { background-image: url("https://i.pinimg.com/564x/68/da/2e/68da2e099c47ea91057dcb3764f48e98.jpg"); }
+        .img6 { background-image: url("https://i.pinimg.com/564x/29/01/b8/2901b82ed652aa1a7f3bb304c081198b.jpg"); }
+
+        .bg-text {
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.2);
+            color: white;
+            font-weight: bold;
+            font-size: 80px;
+            border: 10px solid #f1f1f1;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 600px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="block img1"></div>
+    <div class="block img2"></div>
+    <div class="block img3"></div>
+    <div class="block img4"></div>
+    <div class="block img5"></div>
+    <div class="block img6"></div>
+
+    <div class="bg-text">LookByK</div>
+</body>
+</html>
+{% endblock %}

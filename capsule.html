@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+            color: white;
+        }
+
+        .split {
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 80px;
+            overflow-x: hidden;
+            padding-top: 0;
+        }
+
+        .left {
+            left: 0;
+            background-color: #e8c1cf;
+        }
+
+        .right {
+            right: 0;
+            background-color: #9ba3cc;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .centered img {
+            width: 300px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/capsule">Capsule</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href='/main'>Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/signup">Sign UP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Log IN</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="split left">
+        <div class="centered">
+            <img src="https://i.pinimg.com/564x/87/01/59/870159726ee5cab648064eccd8391c4c.jpg" alt="Avatar woman">
+            <h2>Woman's outfits</h2>
+            <p><a href="/monday.html">VIEW</a></p>
+        </div>
+    </div>
+
+    <div class="split right">
+        <div class="centered">
+            <img src="https://i.pinimg.com/564x/cc/3e/5c/cc3e5c1ebc682c4c609e266353457b3a.jpg" alt="Avatar man">
+            <h2>Man's outfits</h2>
+            <p>
+                <body>
+                    <select name="ap">
+                        <option>Please choose an option</option>
+                    </select>
+
+                    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+                    <script>
+                        const $select = $('select[name="ap"]');
+                        const opts = [
+                            { 'value': '/men-monday', 'text': 'Monday' },
+                            { 'value': 'men-tuesday.html', 'text': 'Tuesday' },
+                            { 'value': 'men-wednesday.html', 'text': 'Wednesday' },
+                            { 'value': 'men-thursday.html', 'text': 'Thursday' },
+                            { 'value': 'men-friday.html', 'text': 'Friday' },
+                            { 'value': 'men-saturday.html', 'text': 'Saturday' },
+                            { 'value': 'men-sunday.html', 'text': 'Sunday' }
+                        ];
+
+                        opts.forEach(function (obj) {
+                            $("<option />", {
+                                value: obj.value,
+                                text: obj.text
+                            }).appendTo($select)
+                        });
+
+                        $select.on("change", function () {
+                            window.location = this.value;
+                        });
+                    </script>
+                </body>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
